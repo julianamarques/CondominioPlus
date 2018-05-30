@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adicionar_proprietario"
+        android:title="Adicionar Proprietário" />
+
+    <item
+        android:id="@+id/remover_apartamento"
+        android:title="Remover Apartamento" />
+</menu>
