@@ -1,6 +1,9 @@
 package com.app.condominioplus.models;
 
+import com.app.condominioplus.utils.TipoOcupacaoConverter;
+
 import io.objectbox.annotation.Backlink;
+import io.objectbox.annotation.Convert;
 import io.objectbox.annotation.Entity;
 import io.objectbox.annotation.Id;
 import io.objectbox.relation.ToMany;
@@ -11,6 +14,7 @@ public class Apartamento {
     @Id private long id;
     private int numero;
     private int qtdQuartos;
+    @Convert(converter = TipoOcupacaoConverter.class, dbType = Integer.class)
     private TipoOcupacao tipoOcupacao;
     private ToOne<Proprietario> proprietario;
     @Backlink private ToMany<TaxaCondominio> taxaCondominios;
