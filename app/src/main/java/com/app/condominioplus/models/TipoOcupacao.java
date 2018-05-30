@@ -1,7 +1,7 @@
 package com.app.condominioplus.models;
 
 public enum TipoOcupacao {
-    VAZIO(0), PROPRIETARIO(1), INQUILINO(2);
+    VAZIO(0), PROPRIETARIO(1), ALUGADO(2);
 
     private int codigo;
 
