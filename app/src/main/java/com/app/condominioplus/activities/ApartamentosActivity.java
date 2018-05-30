@@ -1,13 +1,15 @@
-package com.app.condominioplus;
+package com.app.condominioplus.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SplashActivity extends AppCompatActivity {
+import com.app.condominioplus.R;
+
+public class ApartamentosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_apartamentos);
     }
 }
