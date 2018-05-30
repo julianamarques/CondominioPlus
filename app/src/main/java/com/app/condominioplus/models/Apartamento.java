@@ -16,7 +16,7 @@ public class Apartamento {
     private int qtdQuartos;
     @Convert(converter = TipoOcupacaoConverter.class, dbType = Integer.class)
     private TipoOcupacao tipoOcupacao;
-    private ToOne<Proprietario> proprietario;
+    //private ToOne<Proprietario> proprietario;
     @Backlink private ToMany<TaxaCondominio> taxaCondominios;
 
     public Apartamento() {}
@@ -53,13 +53,13 @@ public class Apartamento {
         return tipoOcupacao;
     }
 
-    public void setProprietario(ToOne<Proprietario> proprietario) {
+    /*public void setProprietario(ToOne<Proprietario> proprietario) {
         this.proprietario = proprietario;
     }
 
     public ToOne<Proprietario> getProprietario() {
         return proprietario;
-    }
+    }*/
 
     public void setTaxaCondominios(ToMany<TaxaCondominio> taxaCondominios) {
         this.taxaCondominios = taxaCondominios;

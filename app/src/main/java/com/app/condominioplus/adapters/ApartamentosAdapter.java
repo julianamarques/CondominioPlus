@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.app.condominioplus.R;
 import com.app.condominioplus.activities.CadastroProprietarioActivity;
+import com.app.condominioplus.activities.DetalhesApartamentoActivity;
 import com.app.condominioplus.models.Apartamento;
 import com.app.condominioplus.models.Proprietario;
 
@@ -51,10 +52,10 @@ public class ApartamentosAdapter extends RecyclerView.Adapter<ApartamentosAdapte
 
         holder.txtNumero.setText("Nº " + apartamento.getNumero());
         holder.txtQtdQuartos.setText(apartamento.getQtdQuartos() + " quartos");
-        //holder.txtOcupacao.setText("Ocupação: " + apartamento.getOcupacao());
+        holder.txtOcupacao.setText("Ocupação: " + apartamento.getTipoOcupacao());
 
         configurarClickLongo(holder.itemView, apartamento, position);
-        //configurarClickCurto(holder.itemView, apartamento, position);
+        configurarClickCurto(holder.itemView, apartamento, position);
     }
 
     @Override
@@ -63,8 +64,7 @@ public class ApartamentosAdapter extends RecyclerView.Adapter<ApartamentosAdapte
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.txt_numero)
-        TextView txtNumero;
+        @BindView(R.id.txt_numero) TextView txtNumero;
         @BindView(R.id.txt_qtd_quartos) TextView txtQtdQuartos;
         @BindView(R.id.txt_ocupacao) TextView txtOcupacao;
         @BindView(R.id.txt_proprietario) TextView txtProprietario;
@@ -85,9 +85,9 @@ public class ApartamentosAdapter extends RecyclerView.Adapter<ApartamentosAdapte
                     adicionarProprietario(itemView, apartamento, position);
                 }
 
-                /*else if(item.getItemId() == R.id.remover_apartamento) {
+                else if(item.getItemId() == R.id.remover_apartamento) {
                     removerApartamento(itemView, apartamento, position);
-                }*/
+                }
 
                 return false;
             });
@@ -123,9 +123,9 @@ public class ApartamentosAdapter extends RecyclerView.Adapter<ApartamentosAdapte
         builder.create().show();
     }
 
-    /*public void configurarClickCurto(final View itemView, final Apartamento apartamento, final int position) {
+    public void configurarClickCurto(final View itemView, final Apartamento apartamento, final int position) {
         itemView.setOnClickListener(view -> {
-            context.startActivity(new Intent(context, ProprietarioActivity.class).putExtra("apartamentoId", apartamento.getId()));
+            context.startActivity(new Intent(context, DetalhesApartamentoActivity.class).putExtra("apartamentoId", apartamento.getId()));
         });
-    }*/
+    }
 }

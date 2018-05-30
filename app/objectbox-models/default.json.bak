@@ -131,13 +131,18 @@
         {
           "id": "4:1758020476928495398",
           "name": "tipoOcupacao"
+        },
+        {
+          "id": "5:3127904380209113972",
+          "indexId": "5:3334534253032956827",
+          "name": "proprietarioId"
         }
       ],
       "relations": []
     },
     {
       "id": "6:4035403993318567693",
-      "lastPropertyId": "4:2749328833826324736",
+      "lastPropertyId": "3:3381414750988823294",
       "name": "Proprietario",
       "properties": [
         {
@@ -151,29 +156,20 @@
         {
           "id": "3:3381414750988823294",
           "name": "telefone"
-        },
-        {
-          "id": "4:2749328833826324736",
-          "indexId": "6:8495127600975444907",
-          "name": "apartamentoId"
         }
       ],
       "relations": []
     }
   ],
   "lastEntityId": "6:4035403993318567693",
-  "lastIndexId": "6:8495127600975444907",
+  "lastIndexId": "5:3334534253032956827",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
   "modelVersion": 4,
   "modelVersionParserMinimum": 4,
   "retiredEntityUids": [],
-  "retiredIndexUids": [
-    3334534253032956827
-  ],
-  "retiredPropertyUids": [
-    3127904380209113972
-  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
   "retiredRelationUids": [],
   "version": 1
 }

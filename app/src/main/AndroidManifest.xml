@@ -3,6 +3,7 @@
     package="com.app.condominioplus">
 
     <application
+        android:name=".dao.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +19,9 @@
         </activity>
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.ApartamentosActivity" />
-        <activity android:name=".activities.CadastroProprietarioActivity"></activity>
+        <activity android:name=".activities.CadastroProprietarioActivity" />
+        <activity android:name=".activities.CadastroApartamentoActivity" />
+        <activity android:name=".activities.DetalhesApartamentoActivity"></activity>
     </application>
 
 </manifest>
