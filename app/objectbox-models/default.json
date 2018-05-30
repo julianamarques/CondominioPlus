@@ -1,0 +1,175 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4899072654868725100",
+      "lastPropertyId": "6:7084150980259109657",
+      "name": "TaxaCondominio",
+      "properties": [
+        {
+          "id": "1:1841597337326087226",
+          "name": "id"
+        },
+        {
+          "id": "2:6744870447426306478",
+          "name": "mesAno"
+        },
+        {
+          "id": "3:4826041893833821607",
+          "name": "data"
+        },
+        {
+          "id": "4:6244100961764903955",
+          "name": "valorPago"
+        },
+        {
+          "id": "5:7785039175678472299",
+          "name": "valorAPagar"
+        },
+        {
+          "id": "6:7084150980259109657",
+          "indexId": "1:1791522343663826603",
+          "name": "apartamentoId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7279938494224453896",
+      "lastPropertyId": "3:1418550101436846024",
+      "name": "TipoDespesa",
+      "properties": [
+        {
+          "id": "1:4055893328615839564",
+          "name": "id"
+        },
+        {
+          "id": "2:6589826657880062573",
+          "name": "nome"
+        },
+        {
+          "id": "3:1418550101436846024",
+          "name": "individual"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:4012476397688128005",
+      "lastPropertyId": "4:6921806661281170840",
+      "name": "ItemTaxaCondominio",
+      "properties": [
+        {
+          "id": "1:6606295668817080255",
+          "name": "id"
+        },
+        {
+          "id": "2:8366293352647736470",
+          "name": "referencia"
+        },
+        {
+          "id": "3:928841848937989607",
+          "name": "valor"
+        },
+        {
+          "id": "4:6921806661281170840",
+          "indexId": "2:7592233722241338742",
+          "name": "taxaCondominioId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1723166147741622266",
+      "lastPropertyId": "5:2290974984387247057",
+      "name": "Despesa",
+      "properties": [
+        {
+          "id": "1:7008484549801756251",
+          "name": "id"
+        },
+        {
+          "id": "2:2542420323869448083",
+          "name": "mesAno"
+        },
+        {
+          "id": "3:4446938399929898095",
+          "name": "valor"
+        },
+        {
+          "id": "4:5723335761160265851",
+          "indexId": "3:6834030200317438646",
+          "name": "itemTaxaCondominioId"
+        },
+        {
+          "id": "5:2290974984387247057",
+          "indexId": "4:8089760458962546982",
+          "name": "tipoDespesaId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:515278805196880433",
+      "lastPropertyId": "5:3127904380209113972",
+      "name": "Apartamento",
+      "properties": [
+        {
+          "id": "1:1179633669824791224",
+          "name": "id"
+        },
+        {
+          "id": "2:8322352218274582029",
+          "name": "numero"
+        },
+        {
+          "id": "3:7547147597898489473",
+          "name": "qtdQuartos"
+        },
+        {
+          "id": "4:1758020476928495398",
+          "name": "tipoOcupacao"
+        },
+        {
+          "id": "5:3127904380209113972",
+          "indexId": "5:3334534253032956827",
+          "name": "proprietarioId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:4035403993318567693",
+      "lastPropertyId": "3:3381414750988823294",
+      "name": "Proprietario",
+      "properties": [
+        {
+          "id": "1:1769264033808197254",
+          "name": "id"
+        },
+        {
+          "id": "2:973888299800978604",
+          "name": "nome"
+        },
+        {
+          "id": "3:3381414750988823294",
+          "name": "telefone"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "6:4035403993318567693",
+  "lastIndexId": "5:3334534253032956827",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
