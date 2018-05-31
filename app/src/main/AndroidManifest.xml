@@ -21,7 +21,9 @@
         <activity android:name=".activities.ApartamentosActivity" />
         <activity android:name=".activities.CadastroProprietarioActivity" />
         <activity android:name=".activities.CadastroApartamentoActivity" />
-        <activity android:name=".activities.DetalhesApartamentoActivity"></activity>
+        <activity android:name=".activities.DetalhesApartamentoActivity" />
+        <activity android:name=".activities.CadastroTipoDespesaActivity" />
+        <activity android:name=".activities.TiposDeDespesasActivity"></activity>
     </application>
 
 </manifest>

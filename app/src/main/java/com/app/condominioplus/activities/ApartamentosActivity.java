@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.app.condominioplus.R;
 import com.app.condominioplus.adapters.ApartamentosAdapter;
@@ -43,7 +44,7 @@ public class ApartamentosActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.fab_adicionar_apartamento)
-    public void abrirCadastroApartamento() {
+    public void abrirCadastroApartamento(View view) {
         startActivity(new Intent(this, CadastroApartamentoActivity.class));
     }
 }

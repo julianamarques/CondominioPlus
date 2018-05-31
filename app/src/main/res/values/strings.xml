@@ -11,4 +11,8 @@
     <string name="tipo_de_ocupacao">Tipo de Ocupacao</string>
     <string name="quantidade_de_quartos">Quantidade de Quartos</string>
     <string name="numero">Número</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="despesa_individual">Despesa individual?</string>
+    <string name="tipos_de_despesas_do_condominio">Tipos de Despesas do Condominio</string>
 </resources>

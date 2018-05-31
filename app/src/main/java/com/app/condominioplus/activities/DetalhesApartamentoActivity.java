@@ -29,6 +29,11 @@ public class DetalhesApartamentoActivity extends AppCompatActivity {
 
         proprietarioBox = ((App)getApplication()).getBoxStore().boxFor(Proprietario.class);
         apartamentoId = getIntent().getLongExtra("apartamentoId", -1);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         listarDetalhes();
     }
 
