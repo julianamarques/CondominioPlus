@@ -12,13 +12,16 @@
         android:layout_height="190dp"
         android:src="@mipmap/ic_launcher_foreground"
         android:layout_gravity="center_horizontal"/>
-    <Button
-        android:id="@+id/btn_cadastro"
-        android:layout_width="290dp"
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="cadastrar"
-        android:backgroundTint="#ffffff"/>
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/btn_apartamentos"
@@ -29,19 +32,27 @@
         android:layout_gravity="center_horizontal"/>
 
     <Button
-        android:id="@+id/btn_lancar_despesas"
+        android:id="@+id/btn_despesas"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="lançar despesas"
+        android:text="@string/despesas_dos_apartamentos"
         android:backgroundTint="#ffffff"/>
 
     <Button
-        android:id="@+id/btn_finalizar_mes"
+        android:id="@+id/btn_taxas_condominio"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Finalizar conta mensal"
+        android:text="@string/taxas_do_condominio"
+        android:backgroundTint="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_tipo_despesas"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tipos_de_despesas_do_condominio"
+        android:layout_gravity="center_horizontal"
         android:backgroundTint="#ffffff"/>
 
 </LinearLayout>

@@ -12,6 +12,7 @@ import com.app.condominioplus.dao.App;
 import com.app.condominioplus.models.Apartamento;
 import com.app.condominioplus.models.Proprietario;
 import com.app.condominioplus.models.TipoOcupacao;
+import com.app.condominioplus.utils.Cadastros;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,7 +40,10 @@ public class CadastroApartamentoActivity extends AppCompatActivity {
         apartamento = new Apartamento();
     }
 
-    public TipoOcupacao getTipoOcupacao() {
+    @OnClick(R.id.btn_salvar_apartamento)
+    public void salvarApartamento(View view) {
+        int numero = Integer.valueOf(editNumero.getText().toString().trim());
+        int qtdQuartos = Integer.valueOf(editQtdQuartos.getText().toString().trim());
         int idRadioGroup = radioGroup.getCheckedRadioButtonId();
         TipoOcupacao tipoOcupacao = TipoOcupacao.VAZIO;
 
@@ -55,25 +59,7 @@ public class CadastroApartamentoActivity extends AppCompatActivity {
             tipoOcupacao = TipoOcupacao.ALUGADO;
         }
 
-        return tipoOcupacao;
-    }
-
-    @OnClick(R.id.btn_salvar_apartamento)
-    public void salvarApartamento(View view) {
-        String numero = editNumero.getText().toString().trim();
-        String qtdQuartos = editQtdQuartos.getText().toString().trim();
-
-        try {
-            apartamento.setNumero(Integer.valueOf(numero));
-            apartamento.setQtdQuartos(Integer.valueOf(qtdQuartos));
-            apartamento.setTipoOcupacao(getTipoOcupacao());
-
-            apartamentoBox.put(apartamento);
-            finish();
-        }
-
-        catch (NumberFormatException e) {
-            Snackbar.make(view, "Preencha os campos!", Snackbar.LENGTH_SHORT);
-        }
+        Cadastros.cadastrarApartamento(apartamentoBox, apartamento, numero, qtdQuartos, tipoOcupacao);
+        finish();
     }
 }

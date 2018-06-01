@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
     public void abrirListaApartamentos(View view) {
         startActivity(new Intent(this, ApartamentosActivity.class));
     }
+
+    @OnClick(R.id.btn_tipo_despesas)
+    public void abrirListaTiposDeDespesas(View view) {
+        startActivity(new Intent(this, TiposDeDespesasActivity.class));
+    }
 }
