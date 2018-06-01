@@ -2,6 +2,7 @@ package com.app.condominioplus.utils;
 
 import com.app.condominioplus.models.Apartamento;
 import com.app.condominioplus.models.Apartamento;
+import com.app.condominioplus.models.ItemTaxaCondominio;
 
 import java.util.List;
 
@@ -38,4 +39,15 @@ public class Calculos {
     public void setQtdTotalQuartos(List<Apartamento> apartamentos) {
         this.qtdTotalQuartos = obterTotalQuartos(apartamentos);
     }
+
+    public Double valorContaCondominio(List<ItemTaxaCondominio> itemTaxaCondominios){
+        Double soma = 0.0;
+
+        for (int i =0; i<itemTaxaCondominios.size();i++){
+            soma+= itemTaxaCondominios.get(i).getValor();
+        }
+
+        return soma;
+    }
+
 }
