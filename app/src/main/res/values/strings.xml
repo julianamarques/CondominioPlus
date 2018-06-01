@@ -15,4 +15,7 @@
     <string name="nao">Não</string>
     <string name="despesa_individual">Despesa individual?</string>
     <string name="tipos_de_despesas_do_condominio">Tipos de Despesas do Condominio</string>
+    <string name="cadastrar_proprietario">Cadastrar Proprietário</string>
+    <string name="cadastrar_apartamento">Cadastrar Apartamento</string>
+    <string name="detalhes">Detalhes</string>
 </resources>

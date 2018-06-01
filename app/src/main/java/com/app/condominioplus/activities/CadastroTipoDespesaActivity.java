@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import com.app.condominioplus.R;
 import com.app.condominioplus.dao.App;
 import com.app.condominioplus.models.TipoDespesa;
+import com.app.condominioplus.utils.Cadastros;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,20 +38,12 @@ public class CadastroTipoDespesaActivity extends AppCompatActivity {
     @OnClick(R.id.btn_salvar_tipo_despesa)
     public void salvarTipoDespesa(View view) {
         String nomeDespesa = editNomeDespesa.getText().toString().trim();
+        boolean individual = false;
 
-        try {
-            tipoDespesa.setNome(nomeDespesa);
-
-            if (checkDespesaIndividual.isChecked()) {
-                tipoDespesa.setIndividual(true);
-            }
-
-            tipoDespesaBox.put(tipoDespesa);
-            finish();
+        if (checkDespesaIndividual.isChecked()) {
+            individual = true;
         }
 
-        catch (NumberFormatException e) {
-            Snackbar.make(view, "Preencha todos os campos!", Snackbar.LENGTH_SHORT);
-        }
+        Cadastros.cadastrarTipoDespesa(tipoDespesaBox, tipoDespesa, nomeDespesa, individual);
     }
 }

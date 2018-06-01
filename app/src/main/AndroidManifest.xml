@@ -10,20 +10,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SplashActivity">
+
+        <activity android:name=".activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.ApartamentosActivity" />
-        <activity android:name=".activities.CadastroProprietarioActivity" />
-        <activity android:name=".activities.CadastroApartamentoActivity" />
-        <activity android:name=".activities.DetalhesApartamentoActivity" />
-        <activity android:name=".activities.CadastroTipoDespesaActivity" />
-        <activity android:name=".activities.TiposDeDespesasActivity"></activity>
+
+        <activity android:name=".activities.ApartamentosActivity"
+            android:label="@string/apartamentos" />
+
+        <activity android:name=".activities.CadastroProprietarioActivity"
+            android:label="@string/cadastrar_proprietario"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+
+        <activity android:name=".activities.CadastroApartamentoActivity"
+            android:label="@string/cadastrar_apartamento" />
+
+        <activity android:name=".activities.DetalhesApartamentoActivity"
+            android:label="@string/detalhes" />
+
+        <activity android:name=".activities.CadastroTipoDespesaActivity"
+            android:label="Cadastro de Tipos de Despesa" />
+
+        <activity android:name=".activities.TiposDeDespesasActivity"
+            android:label="Tipos de Despesa"></activity>
     </application>
 
 </manifest>
