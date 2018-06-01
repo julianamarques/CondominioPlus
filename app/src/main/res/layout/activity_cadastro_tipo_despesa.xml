@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".activities.CadastroTipoDespesaActivity">
 
     <android.support.design.widget.TextInputLayout
@@ -25,10 +26,24 @@
         android:layout_height="wrap_content"
         android:text="Despesa Individual"/>
 
-    <Button
-        android:id="@+id/btn_salvar_tipo_despesa"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/salvar"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_marginRight="100dp" />
+
+        <Button
+            android:id="@+id/btn_salvar_tipo_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar"/>
+
+    </LinearLayout>
 
 </LinearLayout>

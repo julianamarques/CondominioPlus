@@ -36,7 +36,8 @@
             android:label="@string/detalhes" />
 
         <activity android:name=".activities.CadastroTipoDespesaActivity"
-            android:label="Cadastro de Tipos de Despesa" />
+            android:label="Cadastro de Tipos de Despesa"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
 
         <activity android:name=".activities.TiposDeDespesasActivity"
             android:label="Tipos de Despesa"></activity>
