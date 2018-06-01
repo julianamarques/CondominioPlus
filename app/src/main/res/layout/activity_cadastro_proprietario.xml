@@ -38,11 +38,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_cancelar"
+            android:id="@+id/btn_cancelar_proprietario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cancelar"
-            android:layout_marginRight="100dp" />
+            android:layout_marginRight="90dp" />
 
         <Button
             android:id="@+id/btn_salvar_proprietario"

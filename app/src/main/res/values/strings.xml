@@ -8,13 +8,13 @@
     <string name="vazio">Vazio</string>
     <string name="proprietario">Proprietário</string>
     <string name="alugado">Alugado</string>
-    <string name="tipo_de_ocupacao">Tipo de Ocupacao</string>
+    <string name="tipo_de_ocupacao">Tipo de Ocupação:</string>
     <string name="quantidade_de_quartos">Quantidade de Quartos</string>
     <string name="numero">Número</string>
     <string name="finalizar_cont_mensal">finalizar conta mensal</string>
     <string name="sim">Sim</string>
     <string name="nao">Não</string>
-    <string name="despesa_individual">Despesa individual?</string>
+    <string name="despesa_individual">Despesa individual</string>
     <string name="tipos_de_despesas_do_condominio">Tipos de Despesas do Condominio</string>
     <string name="cadastrar_proprietario">Cadastrar Proprietário</string>
     <string name="cadastrar_apartamento">Cadastrar Apartamento</string>

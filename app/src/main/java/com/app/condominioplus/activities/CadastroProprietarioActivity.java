@@ -44,9 +44,10 @@ public class CadastroProprietarioActivity extends AppCompatActivity {
         String telefone = editTelefone.getText().toString().trim();
 
         Cadastros.cadastrarProprietarios(proprietarioBox, proprietario, nome, telefone, apartamentoId);
+        finish();
     }
 
-    @OnClick(R.id.btn_cancelar)
+    @OnClick(R.id.btn_cancelar_proprietario)
     public void cancelar(View view) {
         finish();
     }

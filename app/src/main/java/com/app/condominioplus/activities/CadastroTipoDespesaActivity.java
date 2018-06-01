@@ -45,5 +45,11 @@ public class CadastroTipoDespesaActivity extends AppCompatActivity {
         }
 
         Cadastros.cadastrarTipoDespesa(tipoDespesaBox, tipoDespesa, nomeDespesa, individual);
+        finish();
+    }
+
+    @OnClick(R.id.btn_cancelar_despesa)
+    public void cancelar(View view) {
+        finish();
     }
 }
