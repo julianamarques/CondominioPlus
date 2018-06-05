@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_apartamentos"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apartamentos"
+        android:backgroundTint="#ffffff"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_despesas"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/despesas_dos_apartamentos"
+        android:backgroundTint="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_taxas_condominio"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/taxas_do_condominio"
+        android:backgroundTint="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_tipo_despesas"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tipos_de_despesas_do_condominio"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#ffffff"/>
+
+</LinearLayout>
