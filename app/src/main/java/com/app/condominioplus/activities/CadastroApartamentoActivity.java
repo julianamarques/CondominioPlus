@@ -1,6 +1,5 @@
 package com.app.condominioplus.activities;
 
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,9 +9,8 @@ import android.widget.RadioGroup;
 import com.app.condominioplus.R;
 import com.app.condominioplus.dao.App;
 import com.app.condominioplus.models.Apartamento;
-import com.app.condominioplus.models.Proprietario;
 import com.app.condominioplus.models.TipoOcupacao;
-import com.app.condominioplus.utils.Cadastros;
+import com.app.condominioplus.utils.CadastroApartamento;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -59,7 +57,7 @@ public class CadastroApartamentoActivity extends AppCompatActivity {
             tipoOcupacao = TipoOcupacao.ALUGADO;
         }
 
-        Cadastros.cadastrarApartamento(apartamentoBox, apartamento, numero, qtdQuartos, tipoOcupacao);
+        CadastroApartamento.cadastrarApartamento(apartamentoBox, apartamento, numero, qtdQuartos, tipoOcupacao);
         finish();
     }
 }

@@ -1,17 +1,15 @@
 package com.app.condominioplus.activities;
 
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.app.condominioplus.R;
 import com.app.condominioplus.dao.App;
-import com.app.condominioplus.models.Apartamento;
 import com.app.condominioplus.models.Proprietario;
-import com.app.condominioplus.utils.Cadastros;
+import com.app.condominioplus.utils.CadastroApartamento;
+import com.app.condominioplus.utils.CadastroProprietario;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,7 +41,7 @@ public class CadastroProprietarioActivity extends AppCompatActivity {
         String nome = editNome.getText().toString().trim();
         String telefone = editTelefone.getText().toString().trim();
 
-        Cadastros.cadastrarProprietarios(proprietarioBox, proprietario, nome, telefone, apartamentoId);
+        CadastroProprietario.cadastrarProprietarios(proprietarioBox, proprietario, nome, telefone, apartamentoId);
         finish();
     }
 

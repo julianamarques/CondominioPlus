@@ -1,17 +1,16 @@
 package com.app.condominioplus.activities;
 
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.RadioGroup;
 
 import com.app.condominioplus.R;
 import com.app.condominioplus.dao.App;
 import com.app.condominioplus.models.TipoDespesa;
-import com.app.condominioplus.utils.Cadastros;
+import com.app.condominioplus.utils.CadastroApartamento;
+import com.app.condominioplus.utils.CadastroTipoDespesa;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -44,7 +43,7 @@ public class CadastroTipoDespesaActivity extends AppCompatActivity {
             individual = true;
         }
 
-        Cadastros.cadastrarTipoDespesa(tipoDespesaBox, tipoDespesa, nomeDespesa, individual);
+        CadastroTipoDespesa.cadastrarTipoDespesa(tipoDespesaBox, tipoDespesa, nomeDespesa, individual);
         finish();
     }
 
